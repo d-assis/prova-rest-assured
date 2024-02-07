@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/auth/TestaLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/status/TestaStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/utils/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/authSchema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/getViagensSchema.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bJPXyHFWodejGjRHE2105LgjBW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.TestaLogin.executor": "Run",
+    "JUnit.TestaLogin.loginInvalidoBodySemFormato.executor": "Run",
+    "JUnit.TestaLogin.loginInvalidoCredencialIncorreta.executor": "Run",
+    "JUnit.TestaLogin.loginInvalidousuarioinexistente.executor": "Run",
+    "JUnit.TestaLogin.loginValidoAdmin.executor": "Run",
+    "JUnit.TestaLogin.loginValidoUsuario.executor": "Run",
+    "JUnit.TestaStatus.testaStatusApp.executor": "Run",
+    "JUnit.TestaViagensSemID.consultaViagemComRegiao.executor": "Run",
+    "JUnit.TestaViagensSemID.consultaViagemSemRegiao.executor": "Run",
+    "JUnit.TestaViagensSemID.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/dassi/OneDrive/Área de Trabalho/repos/testesDeAPI/gerenciador-viagens",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestaViagensSemID.consultaViagemComRegiao">
+    <configuration name="TestaLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.auth.TestaLogin" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaLogin.loginInvalidoBodySemFormato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.auth.TestaLogin" />
+      <option name="METHOD_NAME" value="loginInvalidoBodySemFormato" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID.consultaViagemComRegiao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="consultaViagemComRegiao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID.consultaViagemSemRegiao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="consultaViagemSemRegiao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemComRegiao" />
+        <item itemvalue="JUnit.TestaViagensSemID" />
+        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemSemRegiao" />
+        <item itemvalue="JUnit.TestaLogin.loginInvalidoBodySemFormato" />
+        <item itemvalue="JUnit.TestaLogin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="" />
+      <created>1705930259413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705930259413</updated>
+      <workItem from="1705930260510" duration="1038000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

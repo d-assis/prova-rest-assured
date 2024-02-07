@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "data",
+    "errors"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "default": [],
+      "title": "The data Schema",
+      "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+          "acompanhante",
+          "dataPartida",
+          "dataRetorno",
+          "id",
+          "localDeDestino",
+          "regiao"
+        ],
+        "properties": {
+          "acompanhante": {
+            "type": "string",
+            "default": "",
+            "title": "The acompanhante Schema",
+            "examples": [
+              "string"
+            ]
+          },
+          "dataPartida": {
+            "type": "string",
+            "default": "",
+            "title": "The dataPartida Schema",
+            "examples": [
+              "string"
+            ]
+          },
+          "dataRetorno": {
+            "type": "string",
+            "default": "",
+            "title": "The dataRetorno Schema",
+            "examples": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+              0
+            ]
+          },
+          "localDeDestino": {
+            "type": "string",
+            "default": "",
+            "title": "The localDeDestino Schema",
+            "examples": [
+              "string"
+            ]
+          },
+          "regiao": {
+            "type": "string",
+            "default": "",
+            "title": "The regiao Schema",
+            "examples": [
+              "string"
+            ]
+          }
+        },
+        "examples": [{
+          "acompanhante": "string",
+          "dataPartida": "string",
+          "dataRetorno": "string",
+          "id": 0,
+          "localDeDestino": "string",
+          "regiao": "string"
+        }]
+      },
+      "examples": [
+        [{
+          "acompanhante": "string",
+          "dataPartida": "string",
+          "dataRetorno": "string",
+          "id": 0,
+          "localDeDestino": "string",
+          "regiao": "string"
+        }]
+      ]
+    },
+    "errors": {
+      "type": "array",
+      "default": [],
+      "title": "The errors Schema",
+      "items": {
+        "type": "string",
+        "default": "",
+        "title": "A Schema",
+        "examples": [
+          "string"
+        ]
+      },
+      "examples": [
+        [
+          "string"]
+      ]
+    }
+  },
+  "examples": [{
+    "data": [{
+      "acompanhante": "string",
+      "dataPartida": "string",
+      "dataRetorno": "string",
+      "id": 0,
+      "localDeDestino": "string",
+      "regiao": "string"
+    }],
+    "errors": [
+      "string"
+    ]
+  }]
+}
