@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/auth/TestaLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/status/TestaStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/utils/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/authSchema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/getViagensSchema.json" afterDir="false" />
+    <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="subindo testes adicionais">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +41,19 @@
     "JUnit.TestaLogin.loginValidoAdmin.executor": "Run",
     "JUnit.TestaLogin.loginValidoUsuario.executor": "Run",
     "JUnit.TestaStatus.testaStatusApp.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemValida.executor": "Run",
     "JUnit.TestaViagensSemID.consultaViagemComRegiao.executor": "Run",
+    "JUnit.TestaViagensSemID.consultaViagemComRegiaoInvalida.executor": "Run",
+    "JUnit.TestaViagensSemID.consultaViagemNaoAutenticado.executor": "Run",
+    "JUnit.TestaViagensSemID.consultaViagemNaoAutorizado.executor": "Run",
     "JUnit.TestaViagensSemID.consultaViagemSemRegiao.executor": "Run",
+    "JUnit.TestaViagensSemID.consultaViagemSemToken.executor": "Run",
     "JUnit.TestaViagensSemID.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dassi/OneDrive/Área de Trabalho/repos/testesDeAPI/gerenciador-viagens",
+    "last_opened_file_path": "C:/Users/dassi/OneDrive/Área de Trabalho/repos/POC_REST_assured/prova-rest-assured",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,39 +63,24 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestaViagensSemID.consultaViagemComRegiao">
-    <configuration name="TestaLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestaViagensSemID.cadastraViagemValida">
+    <configuration name="TestaViagensSemID.cadastraViagemValida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.montanha.gerenciador.test.auth.*" />
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.auth.TestaLogin" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaLogin.loginInvalidoBodySemFormato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prova-rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.montanha.gerenciador.test.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.auth.TestaLogin" />
-      <option name="METHOD_NAME" value="loginInvalidoBodySemFormato" />
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="cadastraViagemValida" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagensSemID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagensSemID.consultaViagemComRegiaoInvalida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -110,28 +90,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaViagensSemID.consultaViagemComRegiao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prova-rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
-      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="consultaViagemComRegiao" />
+      <option name="METHOD_NAME" value="consultaViagemComRegiaoInvalida" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagensSemID.consultaViagemSemRegiao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagensSemID.consultaViagemNaoAutenticado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -141,7 +106,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="consultaViagemSemRegiao" />
+      <option name="METHOD_NAME" value="consultaViagemNaoAutenticado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID.consultaViagemNaoAutorizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="consultaViagemNaoAutorizado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID.consultaViagemSemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="consultaViagemSemToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemComRegiao" />
-        <item itemvalue="JUnit.TestaViagensSemID" />
-        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemSemRegiao" />
-        <item itemvalue="JUnit.TestaLogin.loginInvalidoBodySemFormato" />
-        <item itemvalue="JUnit.TestaLogin" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemValida" />
+        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemSemToken" />
+        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemNaoAutorizado" />
+        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemNaoAutenticado" />
+        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemComRegiaoInvalida" />
       </list>
     </recent_temporary>
   </component>
@@ -174,9 +171,22 @@
       <updated>1705930259413</updated>
       <workItem from="1705930260510" duration="1038000" />
     </task>
+    <task id="LOCAL-00001" summary="subindo testes adicionais">
+      <option name="closed" value="true" />
+      <created>1707431818040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707431818040</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="subindo testes adicionais" />
+    <option name="LAST_COMMIT_MESSAGE" value="subindo testes adicionais" />
   </component>
 </project>
