@@ -19,7 +19,7 @@ public class TestaViagensSemID extends TestBase{
 			.statusCode(200)
 		.and()
 			.body(matchesJsonSchemaInClasspath("getViagensSchema.json"));
-	};
+	}
 	@Test
 	public void consultaViagemComRegiaoValida(){
 		//login de usuário
@@ -34,7 +34,7 @@ public class TestaViagensSemID extends TestBase{
 			.statusCode(200)
 		.and()
 			.body(matchesJsonSchemaInClasspath("getViagensSchema.json"));
-	};
+	}
 	@Test
 	public void consultaViagemComRegiaoInvalida(){
 		//login de usuário
@@ -47,7 +47,7 @@ public class TestaViagensSemID extends TestBase{
 			.get("/v1/viagens?regiao=Pato")
 			.then()
 			.statusCode(500);
-	};
+	}
 	@Test
 	public void consultaViagemNaoAutenticado(){
 		//login de usuário
@@ -60,7 +60,7 @@ public class TestaViagensSemID extends TestBase{
 			.get("/v1/viagens")
 			.then()
 			.statusCode(401);
-	};
+	}
 
 	@Test
 	public void consultaViagemNaoAutorizado(){
@@ -74,7 +74,7 @@ public class TestaViagensSemID extends TestBase{
 			.get("/v1/viagens")
 			.then()
 			.statusCode(403);
-	};
+	}
 
 	@Test
 	public void consultaViagemSemToken(){
@@ -85,7 +85,7 @@ public class TestaViagensSemID extends TestBase{
 			.get("/v1/viagens")
 			.then()
 			.statusCode(401);
-	};
+	}
 
 	@Test
 	public void cadastraViagemValida(){
@@ -95,6 +95,6 @@ public class TestaViagensSemID extends TestBase{
 		//cadastra viagem
 		//TO-DO: encaixar mais validações nesse cadastro de viagem (JsonSchema)
 		cadastraViagem(token,"cicrana","2025-02-08","2025-02-15","Goiás","Centro-Oeste");
-	};
+	}
 
 }
