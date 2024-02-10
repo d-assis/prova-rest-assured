@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="subindo testes adicionais">
+    <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="ajuste pós code review">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/postViagemSchema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" afterDir="false" />
     </list>
@@ -22,6 +23,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;d-assis&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="75c73126-b937-494a-a545-7699055246bf" />
+        <option name="url" value="https://github.com/d-assis/prova-rest-assured.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -41,6 +56,9 @@
     "JUnit.TestaLogin.loginValidoAdmin.executor": "Run",
     "JUnit.TestaLogin.loginValidoUsuario.executor": "Run",
     "JUnit.TestaStatus.testaStatusApp.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemToken.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutenticado.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutorizado.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemValida.executor": "Run",
     "JUnit.TestaViagensSemID.consultaViagemComRegiao.executor": "Run",
     "JUnit.TestaViagensSemID.consultaViagemComRegiaoInvalida.executor": "Run",
@@ -51,7 +69,7 @@
     "JUnit.TestaViagensSemID.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/dassi/OneDrive/Área de Trabalho/repos/POC_REST_assured/prova-rest-assured",
     "node.js.detected.package.eslint": "true",
@@ -63,7 +81,55 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestaViagensSemID.cadastraViagemValida">
+  <component name="RunManager" selected="JUnit.TestaViagensSemID.cadastraViagemSemToken">
+    <configuration name="TestaViagensSemID.cadastraViagemSemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="cadastraViagemSemToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID.cadastraViagemUsuarioNaoAutenticado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="cadastraViagemUsuarioNaoAutenticado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaViagensSemID.cadastraViagemUsuarioNaoAutorizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prova-rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
+      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
+      <option name="METHOD_NAME" value="cadastraViagemUsuarioNaoAutorizado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestaViagensSemID.cadastraViagemValida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
@@ -75,54 +141,6 @@
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
       <option name="METHOD_NAME" value="cadastraViagemValida" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaViagensSemID.consultaViagemComRegiaoInvalida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prova-rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
-      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="consultaViagemComRegiaoInvalida" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaViagensSemID.consultaViagemNaoAutenticado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prova-rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
-      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="consultaViagemNaoAutenticado" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaViagensSemID.consultaViagemNaoAutorizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prova-rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.montanha.gerenciador.test.viagens.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
-      <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="consultaViagemNaoAutorizado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemToken" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutorizado" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutenticado" />
         <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemValida" />
         <item itemvalue="JUnit.TestaViagensSemID.consultaViagemSemToken" />
-        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemNaoAutorizado" />
-        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemNaoAutenticado" />
-        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemComRegiaoInvalida" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707431818040</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajuste pós code review">
+      <option name="closed" value="true" />
+      <created>1707431926360</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707431926360</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ajuste pós code review">
+      <option name="closed" value="true" />
+      <created>1707431939982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707431939982</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +221,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="subindo testes adicionais" />
-    <option name="LAST_COMMIT_MESSAGE" value="subindo testes adicionais" />
+    <MESSAGE value="ajuste pós code review" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste pós code review" />
   </component>
 </project>

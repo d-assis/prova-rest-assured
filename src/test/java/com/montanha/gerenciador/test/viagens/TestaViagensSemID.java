@@ -1,5 +1,6 @@
 package com.montanha.gerenciador.test.viagens;
 import com.montanha.gerenciador.test.utils.TestBase;
+import io.restassured.http.ContentType;
 import org.junit.Test;
 import static io.restassured.RestAssured.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
@@ -93,8 +94,83 @@ public class TestaViagensSemID extends TestBase{
 		String token = login("admin@email.com","654321");
 
 		//cadastra viagem
-		//TO-DO: encaixar mais validações nesse cadastro de viagem (JsonSchema)
-		cadastraViagem(token,"cicrana","2025-02-08","2025-02-15","Goiás","Centro-Oeste");
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"cicrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+		.when()
+			.post("/v1/viagens")
+		.then()
+			.statusCode(201)
+		.and()
+			.body(matchesJsonSchemaInClasspath("postViagemSchema.json"));
 	}
 
+	@Test
+	public void cadastraViagemUsuarioNaoAutenticado(){
+
+		String token = "pato";
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"cicrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+		.when()
+			.post("/v1/viagens")
+		.then()
+			.statusCode(401);
+	}
+
+	@Test
+	public void cadastraViagemUsuarioNaoAutorizado(){
+		//login de admin
+		String token = login("usuario@email.com","123456");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"cicrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+		.when()
+			.post("/v1/viagens")
+		.then()
+			.statusCode(403);
+	}
+	@Test
+	public void cadastraViagemSemToken(){
+
+		//cadastra viagem
+		given()
+			.body("{\n" +
+				"\t\"acompanhante\": \"cicrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(401);
+	}
 }
