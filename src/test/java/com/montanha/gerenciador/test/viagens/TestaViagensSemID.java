@@ -173,4 +173,215 @@ public class TestaViagensSemID extends TestBase{
 			.then()
 			.statusCode(401);
 	}
+
+	@Test
+	public void cadastraViagemContentTypeInvalido(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"cicrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.XML)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(415);
+	}
+
+	@Test
+	public void cadastraViagemSemContentType(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"cicrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(415);
+	}
+
+	@Test
+	public void cadastraViagemBodyVazio(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+
+	/*
+	caso de teste abaixo não aplicável uma vez que o sistema transforma em string qualquer valor do
+	body que tenha um tipo diferente, completando a request normalmente.
+	@Test
+	public void cadastraViagemAcompanhanteInvalido(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": 123,\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+	 */
+	@Test
+	public void cadastraViagemPartidaMaiorQueRetorno(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"beltrana\",\n" +
+				" \t\"dataPartida\": \"2026-05-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+
+	@Test
+	public void cadastraViagemSemAcompanhante(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+
+	@Test
+	public void cadastraViagemSemDataRetorno(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"beltrana\",\n" +
+				" \t\"dataPartida\": \"2025-02-08\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+
+	@Test
+	public void cadastraViagemSemPartida(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"beltrana\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+
+	@Test
+	public void cadastraViagemSemDestino(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"beltrana\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"regiao\": \"Centro-Oeste\"\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
+
+	@Test
+	public void cadastraViagemSemRegiao(){
+		//login de admin
+		String token = login("admin@email.com","654321");
+
+		//cadastra viagem
+		given()
+			.header("Authorization", token)
+			.body("{\n" +
+				"\t\"acompanhante\": \"beltrana\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"dataRetorno\": \"2025-02-15\",\n" +
+				" \t\"localDeDestino\": \"Goiás\",\n" +
+				"}")
+			.contentType(ContentType.JSON)
+			.when()
+			.post("/v1/viagens")
+			.then()
+			.statusCode(400);
+	}
 }

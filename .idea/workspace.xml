@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="ajuste pós code review">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/postViagemSchema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagensSemID.java" afterDir="false" />
     </list>
@@ -56,6 +55,16 @@
     "JUnit.TestaLogin.loginValidoAdmin.executor": "Run",
     "JUnit.TestaLogin.loginValidoUsuario.executor": "Run",
     "JUnit.TestaStatus.testaStatusApp.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemAcompanhanteInvalido.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemBodyVazio.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemContentTypeInvalido.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemPartidaMaiorQueRetorno.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemAcompanhante.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemContentType.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemDataRetorno.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemDestino.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemPartida.executor": "Run",
+    "JUnit.TestaViagensSemID.cadastraViagemSemRegiao.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemSemToken.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutenticado.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutorizado.executor": "Run",
@@ -81,8 +90,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestaViagensSemID.cadastraViagemSemToken">
-    <configuration name="TestaViagensSemID.cadastraViagemSemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestaViagensSemID.cadastraViagemSemRegiao">
+    <configuration name="TestaViagensSemID.cadastraViagemSemAcompanhante" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -92,13 +101,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="cadastraViagemSemToken" />
+      <option name="METHOD_NAME" value="cadastraViagemSemAcompanhante" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagensSemID.cadastraViagemUsuarioNaoAutenticado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagensSemID.cadastraViagemSemDataRetorno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -108,13 +117,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="cadastraViagemUsuarioNaoAutenticado" />
+      <option name="METHOD_NAME" value="cadastraViagemSemDataRetorno" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagensSemID.cadastraViagemUsuarioNaoAutorizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagensSemID.cadastraViagemSemDestino" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -124,13 +133,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="cadastraViagemUsuarioNaoAutorizado" />
+      <option name="METHOD_NAME" value="cadastraViagemSemDestino" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagensSemID.cadastraViagemValida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagensSemID.cadastraViagemSemPartida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -140,13 +149,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="cadastraViagemValida" />
+      <option name="METHOD_NAME" value="cadastraViagemSemPartida" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagensSemID.consultaViagemSemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagensSemID.cadastraViagemSemRegiao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +165,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagensSemID" />
-      <option name="METHOD_NAME" value="consultaViagemSemToken" />
+      <option name="METHOD_NAME" value="cadastraViagemSemRegiao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemToken" />
-        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutorizado" />
-        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemUsuarioNaoAutenticado" />
-        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemValida" />
-        <item itemvalue="JUnit.TestaViagensSemID.consultaViagemSemToken" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemRegiao" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemDestino" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemDataRetorno" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemPartida" />
+        <item itemvalue="JUnit.TestaViagensSemID.cadastraViagemSemAcompanhante" />
       </list>
     </recent_temporary>
   </component>
