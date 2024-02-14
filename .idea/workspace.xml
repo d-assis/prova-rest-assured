@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e825683-ead2-4dcb-9ed4-5e8580aed1c6" name="Changes" comment="ajuste pós code review">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagemComID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/getViagemIDSchema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/putViagemIDSchema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagemComID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/montanha/gerenciador/test/viagens/TestaViagemComID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +55,20 @@
     "JUnit.TestaLogin.loginValidoAdmin.executor": "Run",
     "JUnit.TestaLogin.loginValidoUsuario.executor": "Run",
     "JUnit.TestaStatus.testaStatusApp.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemAcompanhanteInvalido.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemContentTypeInvalido.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemDestinoInvalido.executor": "Run",
     "JUnit.TestaViagemComID.atualizarViagemNaoAutenticado.executor": "Run",
     "JUnit.TestaViagemComID.atualizarViagemNaoAutorizado.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemPartidaInvalida.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemPartidaMaiorQueRetorno.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemRegiaoInvalida.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemRetornoInvalido.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemSemBody.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemSemContentType.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemSemDestino.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemSemPartida.executor": "Run",
+    "JUnit.TestaViagemComID.atualizarViagemSemRegiao.executor": "Run",
     "JUnit.TestaViagemComID.atualizarViagemSemToken.executor": "Run",
     "JUnit.TestaViagemComID.cadastraViagemValida.executor": "Run",
     "JUnit.TestaViagemComID.consultaValidaPorID.executor": "Run",
@@ -68,6 +78,12 @@
     "JUnit.TestaViagemComID.consultaViagemPorIDNaoAutorizado.executor": "Run",
     "JUnit.TestaViagemComID.consultaViagemPorIDSemToken.executor": "Run",
     "JUnit.TestaViagemComID.consultaViagemValidaPorID.executor": "Run",
+    "JUnit.TestaViagemComID.exclusaoDeViagemIDInvalido.executor": "Run",
+    "JUnit.TestaViagemComID.exclusaoDeViagemInexistente.executor": "Run",
+    "JUnit.TestaViagemComID.exclusaoDeViagemNaoAutenticado.executor": "Run",
+    "JUnit.TestaViagemComID.exclusaoDeViagemNaoAutorizado.executor": "Run",
+    "JUnit.TestaViagemComID.exclusaoDeViagemSemToken.executor": "Run",
+    "JUnit.TestaViagemComID.exclusaoDeViagemValida.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemAcompanhanteInvalido.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemBodyVazio.executor": "Run",
     "JUnit.TestaViagensSemID.cadastraViagemContentTypeInvalido.executor": "Run",
@@ -103,8 +119,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestaViagemComID.atualizarViagemContentTypeInvalido">
-    <configuration name="TestaViagemComID.atualizarViagemContentTypeInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestaViagemComID.exclusaoDeViagemIDInvalido">
+    <configuration name="TestaViagemComID.exclusaoDeViagemIDInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -114,13 +130,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagemComID" />
-      <option name="METHOD_NAME" value="atualizarViagemContentTypeInvalido" />
+      <option name="METHOD_NAME" value="exclusaoDeViagemIDInvalido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagemComID.atualizarViagemNaoAutenticado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagemComID.exclusaoDeViagemInexistente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -130,13 +146,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagemComID" />
-      <option name="METHOD_NAME" value="atualizarViagemNaoAutenticado" />
+      <option name="METHOD_NAME" value="exclusaoDeViagemInexistente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagemComID.atualizarViagemNaoAutorizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagemComID.exclusaoDeViagemNaoAutenticado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -146,13 +162,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagemComID" />
-      <option name="METHOD_NAME" value="atualizarViagemNaoAutorizado" />
+      <option name="METHOD_NAME" value="exclusaoDeViagemNaoAutenticado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagemComID.atualizarViagemSemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagemComID.exclusaoDeViagemNaoAutorizado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -162,13 +178,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagemComID" />
-      <option name="METHOD_NAME" value="atualizarViagemSemToken" />
+      <option name="METHOD_NAME" value="exclusaoDeViagemNaoAutorizado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaViagemComID.cadastraViagemValida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestaViagemComID.exclusaoDeViagemSemToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prova-rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -178,7 +194,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.montanha.gerenciador.test.viagens" />
       <option name="MAIN_CLASS_NAME" value="com.montanha.gerenciador.test.viagens.TestaViagemComID" />
-      <option name="METHOD_NAME" value="cadastraViagemValida" />
+      <option name="METHOD_NAME" value="exclusaoDeViagemSemToken" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestaViagemComID.atualizarViagemContentTypeInvalido" />
-        <item itemvalue="JUnit.TestaViagemComID.atualizarViagemSemToken" />
-        <item itemvalue="JUnit.TestaViagemComID.atualizarViagemNaoAutorizado" />
-        <item itemvalue="JUnit.TestaViagemComID.atualizarViagemNaoAutenticado" />
-        <item itemvalue="JUnit.TestaViagemComID.cadastraViagemValida" />
+        <item itemvalue="JUnit.TestaViagemComID.exclusaoDeViagemIDInvalido" />
+        <item itemvalue="JUnit.TestaViagemComID.exclusaoDeViagemInexistente" />
+        <item itemvalue="JUnit.TestaViagemComID.exclusaoDeViagemSemToken" />
+        <item itemvalue="JUnit.TestaViagemComID.exclusaoDeViagemNaoAutorizado" />
+        <item itemvalue="JUnit.TestaViagemComID.exclusaoDeViagemNaoAutenticado" />
       </list>
     </recent_temporary>
   </component>
